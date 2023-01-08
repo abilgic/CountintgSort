@@ -27,26 +27,26 @@ foreach (var item in dict.OrderBy(k => k.Key))
     Console.Write($"{item.Value} ");
 }
 
-//public static void countSort(List<List<string>> str)
+//public static void countSort(List<List<string>> arr)
 //{
-//    List<KeyValuePair<int, string>> dict = new List<KeyValuePair<int, string>>();
-//    var medium = str.Count / 2;
-//    for (int i = 0; i < str.Count; i++)
+//    List<KeyValuePair<int, string>> kvp = new List<KeyValuePair<int, string>>();
+//    var medium = arr.Count / 2;
+
+//    for (int i = 0; i < arr.Count; i++)
 //    {
 //        if (i < medium)
 //        {
-//            string? temp = str[i][1].Replace(str[i][1], "-");
-//            str[i][1] = temp;
+//            string? temp = arr[i][1].Replace(arr[i][1], "-");
+//            arr[i][1] = temp;
 //        }
-//        KeyValuePair<int, string> newkvp = new KeyValuePair<int, string>(Convert.ToInt32(str[i][0]), str[i][1] ?? "");
-//        dict.Add(newkvp);
+//        KeyValuePair<int, string> newkvp = new KeyValuePair<int, string>(Convert.ToInt32(arr[i][0]), arr[i][1].ToString() ?? "");
+//        kvp.Add(newkvp);
 //    }
 
-//    foreach (var item in dict.OrderBy(k => k.Key))
-//    {
-//        Console.Write($"{item.Value} ");
-//    }
+//    var arrresult = kvp.OrderBy(k => k.Key).Select(k => k.Value);
+//    Console.WriteLine(string.Join(' ', arrresult));
 //}
+
 
 
 
